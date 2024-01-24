@@ -588,12 +588,6 @@ section#contact{
     padding: 12rem 4%;
 }
 
-#contact .section-title span{
-    text-align: center;
-    font-size: 3.25rem;
-    font-weight: 700;
-}
-
 form{
     max-width: 50rem;
     margin: 0 auto;
@@ -620,21 +614,21 @@ form input::placeholder{
     color: rgba(0, 0, 0, 0.795);
 }
 
-form textarea{
-    resize: none;
-    max-height: 25rem;
+
+.textarea{
+    height: 10rem;
+    break-after: auto;
 }
 
 form textarea::placeholder{
     color: rgba(0, 0, 0, 0.795);
 }
 
+
 form .btn-enviar{
     margin-top: 2rem;
-    text-align: center;
-}
-
-form .btn-enviar input{
+    align-items: center;
+    margin-inline: auto;
     width: 12rem;
     background-color: var(--dark-green);
     color: white;
@@ -643,7 +637,13 @@ form .btn-enviar input{
     transition: .2s;
 }
 
-form .btn-enviar input:hover{
+form button{
+    border: none;
+    height: 6rem;
+    border-radius: 10px;
+}
+
+form .btn-enviar:hover{
     box-shadow: 0px 0px 6px var(--green);
     border: none;
     transform: scale(1.05);
@@ -884,14 +884,50 @@ footer .line-footer p a{
         width: 100%;
     }
 
+    .technical-skills{
+        width: 100%;
+    }
+
     .skills-bar,
     .skills-percentage{
         height: 5px;
         border-radius: .25rem;
         margin-bottom: 1rem;
-        width: 28rem;
+        width: 25rem;
     }
 
+    .skills-html{
+        width: 60%;
+    }
+    
+    .skills-css{
+        width: 45%;
+    }
+    
+    .skills-javascript{
+        width: 20%;
+    }
+    
+    .skills-angular{
+        width: 20%;
+    }
+    
+    .skills-java{
+        width: 40%;
+    }
+    
+    .skills-sql{
+        width: 70%;
+    }
+    
+    .skills-spring{
+        width: 20%;
+    }
+    
+    .skills-json{
+        width: 20%;
+    }
+    
     .course-name{
         margin-bottom: 4rem;
     }
@@ -922,7 +958,7 @@ footer .line-footer p a{
 
     .skills-content{
         margin-bottom: 5rem;
-        padding: 0rem 20%;
+        padding: 0rem 4%;
     }
 
     .technical-skills .flex{
@@ -961,7 +997,7 @@ footer .line-footer p a{
     /* ========== CONTACT ========== */
 
     section#contact{
-        padding: 12rem 8%;
+        padding: 8rem 8%;
     }
 
     #contact .section-title{
