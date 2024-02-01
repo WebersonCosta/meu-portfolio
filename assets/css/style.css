@@ -242,7 +242,7 @@ header nav.menu-desktop ul li{
 /*=================== TOP OF SITE STYLE ====================*/
 
 section#top-of-site{
-    padding: 12rem 4%;
+    padding: 20rem 4%;
     height: 100vh;
 }
 
@@ -300,7 +300,7 @@ section#top-of-site .flex{
 /*=================== ABOUT ====================*/
 
 section#about{
-    padding: 12rem 4%;
+    padding: 18rem 4%;
     background-color: var(--dark-grey);
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.226);
 }
@@ -527,7 +527,7 @@ section.qualification{
 
 section#portfolio{
     background-color: var(--dark-grey);
-    padding: 12rem 4%;
+    padding: 14rem 4%;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.226);
 }
 
@@ -751,7 +751,7 @@ footer .line-footer p a{
     /* ========== top of site ========== */
 
     section#top-of-site{
-        padding: 6rem 4%;
+        padding: 18rem 4%;
     }
 
     #top-of-site .img-top-of-site img{
@@ -850,6 +850,11 @@ footer .line-footer p a{
 
     section#about{
         padding: 40px 8%;
+    }
+
+    #top-of-site .img-top-of-site img{
+        max-width:30rem;
+        max-height:25rem;
     }
 
     section#about .flex{
