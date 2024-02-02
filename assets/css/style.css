@@ -545,13 +545,19 @@ section#portfolio .flex{
 
 .img-port{
     width: 34rem;
-    height: 46rem;
-    background-image: linear-gradient(to top, var(--dark-green), var(--light-grey));
+    height: 46rem; 
     border: 1px solid var(--orange);
     cursor: pointer;
     border-radius: 40px;
     position: relative;
     margin-inline: 10px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
 }
 
 .img-port h3{
@@ -572,13 +578,17 @@ section#portfolio .flex{
     justify-content: center;
     font-size: 2.4rem;
     font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.308);
+    background-color: rgba(0, 0, 0, 0.514);
     opacity: 0;
     transition: .5s;
 }
 
 .img-port .overlay:hover{
     opacity: 1;
+}
+
+.empty{
+    background-image: linear-gradient(to top, var(--dark-green), var(--light-grey));
 }
 
 
