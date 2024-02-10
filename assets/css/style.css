@@ -117,6 +117,7 @@ header a{
     transition: 0.1s;
 }
 
+header a.active,
 header a:hover{
     color: rgb(255, 255, 255);
     transform: scale(1.05);
@@ -132,11 +133,12 @@ header a:hover{
     position: relative;
     left: -1rem;
     
-    bottom: -3.5rem;
+    bottom: -3.4rem;
 
     transition: width 0.2s;
 }
 
+.menu-desktop a.active:after,
 .menu-desktop a:hover:after{
     padding-inline: 1rem;
     width: 100%;
@@ -241,38 +243,38 @@ header nav.menu-desktop ul li{
   }
 /*=================== TOP OF SITE STYLE ====================*/
 
-section#top-of-site{
+section#topofsite{
     padding: 20rem 4%;
     height: 100vh;
 }
 
-section#top-of-site .flex{
+section#topofsite .flex{
     align-items: center;
     justify-content: center;
     gap: 9rem;
 }
 
-#top-of-site .txt-top-of-site h1{
+#topofsite .txt-top-of-site h1{
     color: white;
     font-size: 4.5rem;
     line-height: 5rem;
     margin-top: 10rem;
 }
 
-#top-of-site .txt-top-of-site p{
+#topofsite .txt-top-of-site p{
     color: white;
     font-size: 1.6rem;
     line-height: 2rem;
     margin: 4rem 0;
 }
 
-#top-of-site .txt-top-of-site button{
+#topofsite .txt-top-of-site button{
     width: 20rem;
     height: 4rem;
     margin: 8rem 0;
 }
 
-#top-of-site .img-top-of-site img{
+#topofsite .img-top-of-site img{
     max-width:50rem;
     max-height:35rem;
     width: auto;
@@ -543,7 +545,7 @@ section#portfolio .flex{
     color: var(--dark-green);
 }
 
-.img-port{
+a .img-port{
     width: 34rem;
     height: 46rem; 
     border: 1px solid var(--orange);
@@ -556,17 +558,17 @@ section#portfolio .flex{
     transition: 5s;
 }
 
-.img-port:hover{
+a .img-port:hover{
     background-position: 100% 100%;
 }
 
-.img-port h3{
+a .img-port h3{
     margin-top: 8rem;
     text-align: center;
     font-size: 2rem;
 }
 
-.img-port .overlay{
+a .img-port .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -581,13 +583,14 @@ section#portfolio .flex{
     background-color: rgba(0, 0, 0, 0.514);
     opacity: 0;
     transition: .5s;
+    color: var(--green);
 }
 
-.img-port .overlay:hover{
+a .img-port .overlay:hover{
     opacity: 1;
 }
 
-.empty{
+a .empty{
     background-image: linear-gradient(to top, var(--dark-green), var(--light-grey));
 }
 
@@ -760,22 +763,22 @@ footer .line-footer p a{
 
     /* ========== top of site ========== */
 
-    section#top-of-site{
+    section#topofsite{
         padding: 18rem 4%;
     }
 
-    #top-of-site .img-top-of-site img{
+    #topofsite .img-top-of-site img{
         max-width:45rem;
         max-height:30rem;
         display: block;
     }
 
-    #top-of-site .txt-top-of-site h1{
+    #topofsite .txt-top-of-site h1{
         font-size: 3.5rem;
         line-height: 4rem;
     }
 
-    #top-of-site .txt-top-of-site button{
+    #topofsite .txt-top-of-site button{
         margin: 5rem 0;
     }
 
@@ -824,7 +827,7 @@ footer .line-footer p a{
 
     /* ========== top of site ========== */
 
-    section#top-of-site{
+    section#topofsite{
         padding: 10rem 8%;
         height: 0%;
     }
@@ -834,26 +837,27 @@ footer .line-footer p a{
         display: block;
     }
     
-    section#top-of-site .flex{
+    section#topofsite .flex{
         flex-direction: column-reverse;
         gap: 50px;
     }
     
-    #top-of-site .img-top-of-site img{
+    #topofsite .img-top-of-site img{
         margin: auto;
         width: 85%;
     }
     
-    #top-of-site .txt-top-of-site h1{
+    #topofsite .txt-top-of-site h1{
         font-size: 3rem;
         line-height: 3rem;
         margin-top: 0;
         text-align: center;
     }
 
-    #top-of-site .txt-top-of-site p{
+    #topofsite .txt-top-of-site p{
         text-align: justify;
         margin: 3rem 0;
+        text-align: center;
     }
 
     /* ========== ABOUT ========== */
@@ -862,7 +866,7 @@ footer .line-footer p a{
         padding: 40px 8%;
     }
 
-    #top-of-site .img-top-of-site img{
+    #topofsite .img-top-of-site img{
         max-width:30rem;
         max-height:25rem;
     }
@@ -1004,7 +1008,7 @@ footer .line-footer p a{
     }
     .img-port{
         width: 100%;
-        max-width: 34rem;
+        max-width: 30rem;
         margin-inline: auto;
     }
     
