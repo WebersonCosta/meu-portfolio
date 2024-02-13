@@ -67,7 +67,7 @@ a{
 .btn-contact button:hover{
     box-shadow: 0px 0px 6px var(--green);
     border: none;
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 .flex{
@@ -546,8 +546,8 @@ section#portfolio .flex{
 }
 
 a .img-port{
-    width: 34rem;
-    height: 46rem; 
+    width: 30rem;
+    height: 38rem; 
     border: 1px solid var(--orange);
     cursor: pointer;
     border-radius: 40px;
@@ -580,10 +580,18 @@ a .img-port .overlay{
     justify-content: center;
     font-size: 2.4rem;
     font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.514);
     opacity: 0;
     transition: .5s;
-    color: var(--green);
+}
+
+a .img-port .overlay-1{
+    color: #00856f;
+    background-color: rgba(104, 104, 104, 0.514);
+}
+
+a .img-port .overlay-2{
+    color: #ec8800;
+    background-color: rgba(0, 0, 0, 0.514);
 }
 
 a .img-port .overlay:hover{
@@ -951,11 +959,6 @@ footer .line-footer p a{
         margin-bottom: 4rem;
     }
 
-    @media screen and (max-width: 500px){
-        .course-name{
-            margin-bottom: 10rem;
-        }
-    }
     .technical-skills .section-title{
         font-size: 2.5rem;
     }
@@ -1007,8 +1010,6 @@ footer .line-footer p a{
         text-align: center;
     }
     .img-port{
-        width: 100%;
-        max-width: 30rem;
         margin-inline: auto;
     }
     
@@ -1040,5 +1041,27 @@ footer .line-footer p a{
 
     footer .line-footer{
         text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 1040px){
+    
+    #portfolio .flex{
+        display: grid;
+        grid-auto-flow: row;
+        gap: 3rem;
+    }
+
+    .img-port{
+        width: 32rem;
+        height: 40rem;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .course-name{
+        margin-bottom: 10rem;
     }
 }
