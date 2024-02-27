@@ -52,3 +52,21 @@ function activateMenuAtCurrentSection(section){
     }
     
 }
+
+/* ================== SCROLLREVEAL ===================== */
+
+const scrollreveal = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 400,
+    reset: true
+})
+
+scrollreveal.reveal(
+    `#topofsite .txt-top-of-site, #topofsite .btn-contact, #topofsite .img-top-of-site,
+    #about .img-about, #about .txt-about, #about .btn-social, #about .btn-curriculo,
+    #skills .technical-skills, #skills .qualification-sections,
+    #portfolio .section-title, #portfolio .img-port,
+    #contact .section-title, #contact form, #contact .btn-enviar,
+    footer .logo-footer, footer .btn-social, footer .line-footer
+    `,{interval: 100})
