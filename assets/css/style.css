@@ -622,6 +622,12 @@ a .img-port .overlay-2{
     background-color: rgba(0, 0, 0, 0.514);
 }
 
+a .img-port .overlay-3{
+    color: #49613d;
+    background-color: rgba(177, 177, 177, 0.514);
+}
+
+
 a .img-port .overlay:hover{
     opacity: 1;
 }
